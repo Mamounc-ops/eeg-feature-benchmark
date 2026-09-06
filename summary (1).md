@@ -202,7 +202,7 @@ instead.
 
 ### 1. The feature benchmark under covariance
 
-![Fig 1](fig1_features_cov.pdf)
+![Fig 1](fig1_features_cov.pdf.png)
 
 `handfeat` (0.806) and `bandpower` (0.800) lead; `raw eeg` (0.508) is last. But
 the per-subject circles already show the problem: every feature reaches
