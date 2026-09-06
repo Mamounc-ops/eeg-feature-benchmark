@@ -65,7 +65,7 @@ under control. The order of discovery is the argument.
 ## Pipeline & evaluation protocol
 
 ### Fixed chain
-[Pipeline]!(figures/pipeline.png)
+![Fig_0](figures/pipeline.png)
 Everything outside the two swept axes is held constant:
 
 ```
