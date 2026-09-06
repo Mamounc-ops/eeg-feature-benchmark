@@ -202,7 +202,7 @@ instead.
 
 ### 1. The feature benchmark under covariance
 
-![Fig 1](figures/fig1_features_cov.pdf)
+![Fig 1](fig1_features_cov.pdf)
 
 `handfeat` (0.806) and `bandpower` (0.800) lead; `raw eeg` (0.508) is last. But
 the per-subject circles already show the problem: every feature reaches
@@ -224,7 +224,7 @@ the features is not their ceiling but how often they reach it.
 
 ### 2. Swapping in β-band PLV
 
-![Fig 2](figures/fig2_features_plv_beta.pdf)
+![Fig 2](fig2_features_plv_beta.pdf)
 
 `handfeat` rises to 0.830 and `bandpower` to 0.815, which is what motivated the
 adjacency sweep. Two other movements are larger and were visible at the time:
@@ -235,7 +235,7 @@ this figure.
 
 ### 3. The distribution is bimodal
 
-![Fig 3](figures/fig3_bimodality.pdf)
+![Fig 3](fig3_bimodality.pdf)
 
 Pooling all 120 cells of the covariance arm: **65.8% above 0.70, 13.3% below
 0.35, only 20.8% in between.** Runs either converge to roughly 0.85 or collapse
@@ -244,7 +244,7 @@ approximately (fraction of converged runs) × 0.85.
 
 ### 4. Two runs of the identical graph
 
-![Fig 4](figures/fig4_same_graph_runs.pdf)
+![Fig 4](fig4_same_graph_runs.pdf)
 
 `cov` and `cov_orig` use matrices that are numerically the same: correlation
 0.999976 between the two, maximum absolute element difference 0.0096. For
@@ -266,7 +266,7 @@ for `handfeat`. Against the re-run of the same graph it is **+0.024**.
 
 ### 5. The noise floor
 
-![Fig 5](figures/fig5_noise_floor.pdf)
+![Fig 5](fig5_noise_floor.pdf)
 
 Across all 120 cells, between two runs of the numerically identical graph:
 
@@ -283,7 +283,7 @@ per-cell instability that invalidates cell-level reading.**
 
 ### 6. No adjacency separates from any other
 
-![Fig 6](figures/fig6_arm_means.pdf)
+![Fig 6](fig6_arm_means.pdf)
 
 | Arm | Mean R² |
 |---|---|
@@ -322,7 +322,7 @@ all, and `uniform_scaled` beats it by as much as PLV does.
 
 ### 7. What the matrices look like
 
-![Fig 7](figures/fig7_adjacency_matrices.pdf)
+![Fig 7](fig7_adjacency_matrices.pdf)
 
 | Matrix | Off-diagonal min | max | sd | % negative |
 |---|---|---|---|---|
@@ -337,7 +337,7 @@ all, and `uniform_scaled` beats it by as much as PLV does.
 
 ### 8. The feature ranking is a stability ranking
 
-![Fig 8](figures/fig8_collapse_vs_rank.pdf)
+![Fig 8](fig8_collapse_vs_rank.pdf)
 
 Pooling all 9 arms, a feature's mean R² and its collapse rate (fraction of cells
 below 0.35) correlate at **r = −0.98**.
